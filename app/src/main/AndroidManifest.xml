@@ -28,11 +28,13 @@
         android:name=".data.DTApplication"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity android:name=".MainActivity" >
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
 
         <activity android:name=".CheeseDetailActivity"
@@ -41,9 +43,9 @@
                 android:value=".MainActivity" />
         </activity>
 
-        <!-- 广告开屏
+        <!-- 广告开屏-->
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -52,7 +54,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        -->
+
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SearchUserActivity" />
