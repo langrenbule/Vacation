@@ -2,6 +2,7 @@ package com.deity.vacation;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -19,6 +20,9 @@ import com.deity.vacation.fragment.CheeseListFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 这个页面显示的是一堆的瓶子，当然，它是以列表的形式展现的
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -42,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (viewPager != null) {
             setupViewPager(viewPager);
         }
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 
