@@ -77,7 +77,7 @@ public class SplashActivity extends BaseActivity {
                     }
                 }
             },1000);
-            this.finish();
+//            this.finish();
         } else {
             canJumpImmediately = true;
         }
@@ -107,7 +107,7 @@ public class SplashActivity extends BaseActivity {
             }
         },1000);
 //        this.startActivity(new Intent(RSplashActivity.this, MainActivity.class));
-        this.finish();
+//        this.finish();
     }
 
     @Override
