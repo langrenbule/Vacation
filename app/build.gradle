@@ -36,4 +36,5 @@ dependencies {
     //bmob-sdk:3.4.7
     compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
     compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/Baidu_MobAds_SDK.jar')
 }

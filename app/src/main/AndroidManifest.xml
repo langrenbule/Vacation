@@ -20,6 +20,11 @@
     <!--通知震动-->
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- Baidu AD -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,6 +32,18 @@
         android:supportsRtl="true"
         android:name=".data.DTApplication"
         android:theme="@style/AppTheme.NoActionBar" >
+
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="a32e178e" />
+
+        <!-- for baidu xadsdk internal web-browser -->
+        <!-- 非信息广告必须添加 -->
+        <activity
+            android:name="com.baidu.mobads.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
         <activity android:name=".MainActivity" >
             <!--
             <intent-filter>
